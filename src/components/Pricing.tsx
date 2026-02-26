@@ -26,10 +26,10 @@ export default function Pricing() {
             </p>
             <div className="mb-6">
               <span className="text-4xl font-extrabold text-primary">
-                $3,500
+                $5,000
               </span>
               <span className="text-text-muted">
-                &ndash;$7,000/mo
+                &ndash;$15,000/mo
               </span>
               <p className="text-sm text-text-muted mt-1">per engineer, based on seniority</p>
             </div>

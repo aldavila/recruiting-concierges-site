@@ -29,7 +29,7 @@ export default function CTA() {
       const email = data.get("email");
       const role = data.get("role");
       const message = data.get("message");
-      window.location.href = `mailto:info@recruitingconcierges.com?subject=New Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0ARole: ${role}%0A%0A${message}`;
+      window.location.href = `mailto:hello@recruitingconcierges.com?subject=New Inquiry from ${name}&body=Name: ${name}%0AEmail: ${email}%0ARole: ${role}%0A%0A${message}`;
     } finally {
       setLoading(false);
     }
@@ -75,10 +75,10 @@ export default function CTA() {
                 <div>
                   <p className="font-semibold">Email us directly</p>
                   <a
-                    href="mailto:info@recruitingconcierges.com"
+                    href="mailto:hello@recruitingconcierges.com"
                     className="text-blue-200 hover:text-white transition-colors"
                   >
-                    info@recruitingconcierges.com
+                    hello@recruitingconcierges.com
                   </a>
                 </div>
               </div>
