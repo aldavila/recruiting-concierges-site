@@ -14,14 +14,15 @@ export default function CTA() {
     const data = new FormData(form);
 
     try {
-      // Send to Formspree or your endpoint
-      const res = await fetch("https://formspree.io/f/xplaceholder", {
+      // FormSubmit.co forwards to hello@recruitingconcierges.com
+      const res = await fetch("https://formsubmit.co/ajax/hello@recruitingconcierges.com", {
         method: "POST",
         body: data,
-        headers: { Accept: "application/json" },
       });
       if (res.ok) {
         setSubmitted(true);
+      } else {
+        throw new Error("Form submission failed");
       }
     } catch {
       // Fallback: mailto
