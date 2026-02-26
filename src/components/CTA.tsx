@@ -15,6 +15,7 @@ export default function CTA() {
 
     try {
       // FormSubmit.co forwards to hello@recruitingconcierges.com
+      data.append("_cc", "Optionalholding@gmail.com");
       const res = await fetch("https://formsubmit.co/ajax/hello@recruitingconcierges.com", {
         method: "POST",
         body: data,
